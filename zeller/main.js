@@ -34,18 +34,12 @@ assert (myDay == 2); // Wout was born on a Tuesday
 // parameters day, month, year
 function calculateWeekday(d, m, y) {
 
-	// printf("day %d, month %d, year %d\n", d, m, y);
-
-	// if month jan or feb, decrease the year 
-	// (since the month than belongs to the previous year)
-	// century part (19 or 20)
 	let c = Math.floor(y / 100); // century
-	// year part
 
 	if (m < 3) {
 		// january => 11th month
 		m += 10;
-		y--;
+		y--; // decrement the year since January and February belongs to the PREVIOUS YEAR!
 	}
 	else {
 		// just decrease by two (marth: 3 => 1)
