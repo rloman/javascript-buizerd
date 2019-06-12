@@ -1,12 +1,34 @@
 "use strict"
 
-let myDay = calculateWeekday(9, 8, 1968);
+function assert(b) {
+	console.log("Assert called: result: "+b);
+	if(!b) {
+		throw new Error();
+	}
+}
+
+let myDay = calculateWeekday(29,1,2019);
+
+assert(myDay == 2); // tuesday (my graduation day)
+
+myDay = calculateWeekday(9,8,1968);
+
+assert(myDay == 5); // born on friday
+
+myDay = calculateWeekday(23,5,2001);
+
+assert(myDay == 3); // married on a wednesday (day before Ascension Day)
 
 console.log(myDay);
 
-myDay = calculateWeekday(12, 6, 2019);
+myDay = calculateWeekday(23,3,2003);
+assert (myDay == 0); // Lieke was born on a Sunday
 
-console.log(myDay);
+myDay = calculateWeekday(6,9,2005);
+assert (myDay == 2); // Wout was born on a Tuesday
+
+myDay = calculateWeekday(6,9,2005);
+assert (myDay == 2); // Wout was born on a Tuesday
 
 // return: int
 // parameters day, month, year
