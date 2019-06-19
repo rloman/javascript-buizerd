@@ -6,6 +6,10 @@ class Service {
         this.repo = repo;
     }
 
+    randomNumber() {
+        return this.repo.randomNumber();
+    }
+
 }
 
 let service = new Service(repo);

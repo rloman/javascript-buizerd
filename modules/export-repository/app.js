@@ -1,6 +1,3 @@
-const service = require("./service.js");
-const repo = require("./repository.js");
+const controller = require("./controller.js");
 
-console.log(service.repo.id);
-
-console.log(repo.id);
+console.log(controller.randomNumber());

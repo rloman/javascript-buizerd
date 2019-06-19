@@ -3,6 +3,10 @@ class Repository {
     constructor(id) {
         this.id = id;
     }
+
+    randomNumber() {
+        return this.id;
+    }
 }
 
 
