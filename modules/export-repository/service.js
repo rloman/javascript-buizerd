@@ -10,6 +10,14 @@ class Service {
         return this.repo.randomNumber();
     }
 
+    add(bird) {
+       this.repo.add(bird);
+    }
+
+    removeById(id) {
+       this.repo.removeById(id);
+    }
+
 }
 
 let service = new Service(repo);

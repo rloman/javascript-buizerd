@@ -10,6 +10,16 @@ class Controller {
         return this.service.randomNumber();
     }
 
+    add(bird) {
+        this.service.add(bird);
+         
+     }
+ 
+     removeById(id) {
+        this.service.removeById(id);
+     }
+ 
+
 }
 
 let controller = new Controller(service);
