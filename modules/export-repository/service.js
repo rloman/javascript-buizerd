@@ -6,6 +6,7 @@ class Service {
         this.repo = repo;
     }
 
+    // for demo (to get all people started without )
     randomNumber() {
         return this.repo.randomNumber();
     }
