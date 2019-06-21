@@ -18,6 +18,8 @@ class Repository {
         bird.id = ++this.counter;
         this.birds.push(bird);
         console.log("Created bird with id: "+bird.id);
+
+        return bird;
     }
 
     removeById(id) {
@@ -28,6 +30,20 @@ class Repository {
                 return; // done
             }
         }
+    }
+
+     findById(id) {
+        let result = this.birds[id-1];
+
+        console.log("Found bird with id: "+id);
+
+        console.log(result);
+
+        let promise = new Promise(function(resolve, reject){
+            resolve(result);
+        });
+
+        return promise;
     }
 
 

@@ -12,11 +12,15 @@ class Service {
     }
 
     add(bird) {
-       this.repo.add(bird);
+       return this.repo.add(bird);
     }
 
     removeById(id) {
        this.repo.removeById(id);
+    }
+
+    async findById(id) {
+       return await this.repo.findById(id);
     }
 
 }

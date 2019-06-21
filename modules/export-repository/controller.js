@@ -6,17 +6,21 @@ class Controller {
         this.service = service;
     }
 
-    randomNumber() {
+    async randomNumber() {
         return this.service.randomNumber();
     }
 
     add(bird) {
-        this.service.add(bird);
+        return this.service.add(bird);
          
      }
  
      removeById(id) {
         this.service.removeById(id);
+     }
+
+     async findById(id) {
+         return await this.service.findById(id);
      }
  
 
