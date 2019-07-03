@@ -9,6 +9,6 @@ async function bar() {
     console.log(r);
 }
 
-bar();
 
+bar();
 console.log("Einde programma");
