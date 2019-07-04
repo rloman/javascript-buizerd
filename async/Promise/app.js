@@ -31,3 +31,16 @@ resultOfNiet.then((data) => {
 }, (error) => {
     console.log("Fail!!!"+error);
 });
+
+
+// more hard
+resultOfNiet = doetIeHetOfDoetIeHetNiet(4);
+resultOfNiet.then((data) => {
+    console.log(data);
+}, (error) => {
+    console.log("Fail!!!"+error);
+}).then((data) => {
+    console.log("Step 2: "+data);
+}, (error) => {
+    console.log("Fail 2: "+error);
+});
