@@ -17,30 +17,24 @@ function doetIeHetOfDoetIeHetNiet(n) {
 }
 
 
+// more hard
 let resultOfNiet = doetIeHetOfDoetIeHetNiet(4);
 resultOfNiet.then((data) => {
     console.log(data);
-}, (error) => {
-    console.log("Fail!!!"+error);
-});
 
-
-resultOfNiet = doetIeHetOfDoetIeHetNiet(3);
-resultOfNiet.then((data) => {
-    console.log(data);
-}, (error) => {
-    console.log("Fail!!!"+error);
-});
-
-
-// more hard
-resultOfNiet = doetIeHetOfDoetIeHetNiet(4);
-resultOfNiet.then((data) => {
-    console.log(data);
+    return data;
 }, (error) => {
     console.log("Fail!!!"+error);
 }).then((data) => {
     console.log("Step 2: "+data);
+    return data ** 2;
 }, (error) => {
     console.log("Fail 2: "+error);
+}).then((data) => {
+    console.log(data);
+
+    return data ** 2;
+
+}, (error) => {
+    console.log("Fout");
 });
