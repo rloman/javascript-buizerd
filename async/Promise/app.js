@@ -2,7 +2,6 @@
 // this function returns a promise of
 // input: even the Promise.resolve (success);
 // input: odd then Promise.fail (fail)
-
 function doetIeHetOfDoetIeHetNiet(n) {
     if(n %2 == 0) {
         let result = Promise.resolve(n**2);
@@ -38,3 +37,7 @@ resultOfNiet.then((data) => {
 }, (error) => {
     console.log("Fout");
 });
+
+// Promised enough???
+
+// Again ... learning here is a verb (werkwoord) dus we moeten het gewoon vaker doen.
