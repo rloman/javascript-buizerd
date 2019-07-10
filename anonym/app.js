@@ -20,3 +20,20 @@ function foo(a, b) {
 console.log(names);
 names.sort(foo);
 console.log(names);
+
+// sort inverse but  als with array function
+names.sort((a,b) => {
+    if (a === b) {
+        return 0;
+    }
+   else {
+       if(a > b) {
+           return -1;
+       }
+       else {
+           return 1;
+       }
+   }
+})
+
+console.log(names);
