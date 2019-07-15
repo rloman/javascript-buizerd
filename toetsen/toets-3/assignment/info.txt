@@ -1,0 +1,20 @@
+Create a Beer app
+
+Requirements
+
+Have a class Repository which is able to save an instance of class Beer in an Array
+
+we can get the elements of the array using an ASYNCHRONOUS findAll method
+
+Actions:
+add some beers to the repository (3 or some)
+print them
+
+keywords:
+you have to use
+class
+array
+async await
+for loop
+require
+
