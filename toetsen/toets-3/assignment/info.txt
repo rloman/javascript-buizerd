@@ -2,19 +2,27 @@ Create a Beer app
 
 Requirements
 
-Have a class Repository which is able to save an instance of class Beer in an Array
+Have a class Repository which is 
+	able to save an instance of class Beer 
+	in an Array
 
-we can get the elements of the array using an ASYNCHRONOUS findAll method
+we can get the elements of the 
+	array using an 
+	ASYNCHRONOUS findAll() method
 
 Actions:
 add some beers to the repository (3 or some)
 print them
 
-keywords:
-you have to use
+keywords: you have to use
 class
 array
 async await
-for loop
-require
+some kind of loop
+require (to read in a module)
 
+Bonus:
+make a findBeerByName(name) method which returns a Beer with the given name
+if that beer does not exist an Error is thrown
+
+Oplevering: via een repo op github!!!

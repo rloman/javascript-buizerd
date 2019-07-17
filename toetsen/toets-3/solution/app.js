@@ -1,7 +1,8 @@
-let Beer = require('./modules/beer');
+const Beer = require('./modules/beer');
 
-let koelkast = require('./modules/repository');
 
+const koelkast = require('./modules/repository');
+const appelKoelkast = require("./modules/repository");
 
 let b = new Beer("Heineken", "33");
 
@@ -17,7 +18,20 @@ async function print() {
 
 (async () => {
     await print();
+    
+})();
+
+
+
+
+
+(async () => {
+    console.log("En nu de appelkoelkast inhoud ... ");
+    for (let element of await appelKoelkast.findAll()) {
+        console.log(element);
+    }
     console.log("Done");
 })();
+
 
 

@@ -14,4 +14,6 @@ class Repository {
     }
 }
 
-module.exports = new Repository();
+const repo = new Repository();
+module.exports = repo; // dit is gecached!!! dus elke gebruiker
+// van deze repository class gebruikt dezelfde instantie
